@@ -5755,3 +5755,1141 @@ Runtime Error
 [0m07:04:53.843588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215BDF55580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C0BC8680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215C2746D20>]}
 [0m07:04:53.843588 [debug] [MainThread]: Flushing usage events
 [0m07:04:55.704534 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:21:16.285086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243FD3DC5F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243FFC1B260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243816C1EB0>]}
+
+
+============================== 06:21:16.363211 | a358ba1b-a4a8-487b-8d8b-7c76fa00bb13 ==============================
+[0m06:21:16.363211 [info ] [MainThread]: Running with dbt=1.11.7
+[0m06:21:16.363211 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'E:\\aws_dbt_snowflake\\aws_dbt_snowflake_project\\logs'}
+[0m06:21:20.436913 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m06:21:20.436913 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m06:21:20.436913 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m06:21:21.358805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a358ba1b-a4a8-487b-8d8b-7c76fa00bb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243FD3DC5F0>]}
+[0m06:21:21.583871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a358ba1b-a4a8-487b-8d8b-7c76fa00bb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243FFEEED20>]}
+[0m06:21:21.583871 [info ] [MainThread]: Registered adapter: snowflake=1.11.3
+[0m06:21:22.712920 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m06:21:23.072296 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:21:23.072296 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m06:21:23.072296 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:21:23.183872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a358ba1b-a4a8-487b-8d8b-7c76fa00bb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024383DA7F80>]}
+[0m06:21:23.418250 [debug] [MainThread]: Wrote artifact WritableManifest to E:\aws_dbt_snowflake\aws_dbt_snowflake_project\target\manifest.json
+[0m06:21:23.465080 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\aws_dbt_snowflake\aws_dbt_snowflake_project\target\semantic_manifest.json
+[0m06:21:23.764201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a358ba1b-a4a8-487b-8d8b-7c76fa00bb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002438424B140>]}
+[0m06:21:23.764201 [info ] [MainThread]: Found 11 models, 3 analyses, 3 snapshots, 1 test, 3 sources, 525 macros
+[0m06:21:23.764201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a358ba1b-a4a8-487b-8d8b-7c76fa00bb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024383FA4EC0>]}
+[0m06:21:23.779834 [info ] [MainThread]: 
+[0m06:21:23.779834 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m06:21:23.784756 [info ] [MainThread]: 
+[0m06:21:23.788815 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m06:21:23.789898 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m06:21:32.873923 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m06:21:32.873923 [debug] [ThreadPool]: On list_AIRBNB: show terse schemas in database AIRBNB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+[0m06:21:32.873923 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:21:38.755541 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 5.870 seconds
+[0m06:21:38.771154 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m06:21:38.771154 [debug] [ThreadPool]: On list_AIRBNB: show terse schemas in database AIRBNB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+[0m06:21:39.145891 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 0.374 seconds
+[0m06:21:39.145891 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m06:21:39.161515 [debug] [ThreadPool]: On list_AIRBNB: show terse schemas in database AIRBNB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+[0m06:21:39.520908 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 0.357 seconds
+[0m06:21:39.520908 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_bronze'
+[0m06:21:39.536490 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_bronze"
+[0m06:21:39.536490 [debug] [ThreadPool]: On list_AIRBNB_bronze: show objects in AIRBNB.bronze
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_AIRBNB_bronze"} */;
+[0m06:21:39.536490 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:21:41.373117 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.825 seconds
+[0m06:21:41.373117 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AIRBNB_bronze, now list_AIRBNB_silver)
+[0m06:21:41.373117 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_silver"
+[0m06:21:41.373117 [debug] [ThreadPool]: On list_AIRBNB_silver: show objects in AIRBNB.silver
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_AIRBNB_silver"} */;
+[0m06:21:41.764995 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.395 seconds
+[0m06:21:41.780230 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AIRBNB_silver, now list_AIRBNB_gold)
+[0m06:21:41.795837 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_gold"
+[0m06:21:41.795837 [debug] [ThreadPool]: On list_AIRBNB_gold: show objects in AIRBNB.gold
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_AIRBNB_gold"} */;
+[0m06:21:42.329939 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.537 seconds
+[0m06:21:42.345041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a358ba1b-a4a8-487b-8d8b-7c76fa00bb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243841DA870>]}
+[0m06:21:42.345041 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.bronze_bookings
+[0m06:21:42.345041 [info ] [Thread-2 (]: 1 of 8 START sql incremental model bronze.bronze_bookings ...................... [RUN]
+[0m06:21:42.345041 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.aws_dbt_snowflake_project.bronze_bookings'
+[0m06:21:42.345041 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.bronze_bookings
+[0m06:21:42.382739 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:21:42.385902 [debug] [Thread-2 (]: Began executing node model.aws_dbt_snowflake_project.bronze_bookings
+[0m06:21:42.482718 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:21:42.482718 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: create or replace  temporary view AIRBNB.bronze.bronze_bookings__dbt_tmp
+  
+  
+  
+  
+  as (
+    
+
+
+SELECT * FROM  AIRBNB.staging.bookings
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM AIRBNB.bronze.bronze_bookings)
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */;
+[0m06:21:42.482718 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m06:21:44.698345 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.212 seconds
+[0m06:21:44.729093 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:21:44.729093 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: describe table AIRBNB.bronze.bronze_bookings__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */
+[0m06:21:45.105469 [debug] [Thread-2 (]: SQL status: SUCCESS 9 in 0.371 seconds
+[0m06:21:45.120596 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:21:45.120596 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: describe table AIRBNB.bronze.bronze_bookings
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */
+[0m06:21:45.435026 [debug] [Thread-2 (]: SQL status: SUCCESS 9 in 0.323 seconds
+[0m06:21:45.450140 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:21:45.450140 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: describe table "AIRBNB"."BRONZE"."BRONZE_BOOKINGS"
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */
+[0m06:21:45.793885 [debug] [Thread-2 (]: SQL status: SUCCESS 9 in 0.331 seconds
+[0m06:21:45.825142 [debug] [Thread-2 (]: Writing runtime sql for node "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:21:45.825142 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:21:45.825142 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */;
+[0m06:21:46.295753 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.462 seconds
+[0m06:21:46.295753 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:21:46.295753 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: insert into AIRBNB.bronze.bronze_bookings ("BOOKING_ID", "LISTING_ID", "BOOKING_DATE", "NIGHTS_BOOKED", "BOOKING_AMOUNT", "CLEANING_FEE", "SERVICE_FEE", "BOOKING_STATUS", "CREATED_AT")
+        (
+            select "BOOKING_ID", "LISTING_ID", "BOOKING_DATE", "NIGHTS_BOOKED", "BOOKING_AMOUNT", "CLEANING_FEE", "SERVICE_FEE", "BOOKING_STATUS", "CREATED_AT"
+            from AIRBNB.bronze.bronze_bookings__dbt_tmp
+        )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */;
+[0m06:21:47.253503 [debug] [Thread-2 (]: SQL status: SUCCESS 0 in 0.968 seconds
+[0m06:21:47.268669 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:21:47.268669 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */
+[0m06:21:47.660944 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.399 seconds
+[0m06:21:47.676467 [debug] [Thread-2 (]: Applying DROP to: AIRBNB.bronze.bronze_bookings__dbt_tmp
+[0m06:21:47.692130 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:21:47.692130 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: drop view if exists AIRBNB.bronze.bronze_bookings__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */
+[0m06:21:48.084887 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.393 seconds
+[0m06:21:48.147438 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a358ba1b-a4a8-487b-8d8b-7c76fa00bb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243842AA090>]}
+[0m06:21:48.147438 [info ] [Thread-2 (]: 1 of 8 OK created sql incremental model bronze.bronze_bookings ................. [[32mSUCCESS 0[0m in 5.80s]
+[0m06:21:48.147438 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.bronze_bookings
+[0m06:21:48.147438 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.bronze_hosts
+[0m06:21:48.147438 [info ] [Thread-2 (]: 2 of 8 START sql incremental model bronze.bronze_hosts ......................... [RUN]
+[0m06:21:48.147438 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.bronze_bookings, now model.aws_dbt_snowflake_project.bronze_hosts)
+[0m06:21:48.147438 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.bronze_hosts
+[0m06:21:48.170635 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:21:48.170635 [debug] [Thread-2 (]: Began executing node model.aws_dbt_snowflake_project.bronze_hosts
+[0m06:21:48.170635 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:21:48.170635 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: create or replace  temporary view AIRBNB.bronze.bronze_hosts__dbt_tmp
+  
+  
+  
+  
+  as (
+    
+
+
+SELECT * FROM  AIRBNB.staging.hosts
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM AIRBNB.bronze.bronze_hosts)
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */;
+[0m06:21:48.899911 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.729 seconds
+[0m06:21:48.915518 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:21:48.915518 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: describe table AIRBNB.bronze.bronze_hosts__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */
+[0m06:21:49.260851 [debug] [Thread-2 (]: SQL status: SUCCESS 6 in 0.342 seconds
+[0m06:21:49.260851 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:21:49.260851 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: describe table AIRBNB.bronze.bronze_hosts
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */
+[0m06:21:49.573401 [debug] [Thread-2 (]: SQL status: SUCCESS 6 in 0.317 seconds
+[0m06:21:49.637696 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:21:49.638694 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: describe table "AIRBNB"."BRONZE"."BRONZE_HOSTS"
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */
+[0m06:21:49.958586 [debug] [Thread-2 (]: SQL status: SUCCESS 6 in 0.318 seconds
+[0m06:21:49.970253 [debug] [Thread-2 (]: Writing runtime sql for node "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:21:49.974253 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:21:49.975254 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */;
+[0m06:21:50.402690 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.431 seconds
+[0m06:21:50.402690 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:21:50.402690 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: insert into AIRBNB.bronze.bronze_hosts ("HOST_ID", "HOST_NAME", "HOST_SINCE", "IS_SUPERHOST", "RESPONSE_RATE", "CREATED_AT")
+        (
+            select "HOST_ID", "HOST_NAME", "HOST_SINCE", "IS_SUPERHOST", "RESPONSE_RATE", "CREATED_AT"
+            from AIRBNB.bronze.bronze_hosts__dbt_tmp
+        )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */;
+[0m06:21:51.268077 [debug] [Thread-2 (]: SQL status: SUCCESS 0 in 0.857 seconds
+[0m06:21:51.268077 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:21:51.268077 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */
+[0m06:21:51.736656 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.465 seconds
+[0m06:21:51.753613 [debug] [Thread-2 (]: Applying DROP to: AIRBNB.bronze.bronze_hosts__dbt_tmp
+[0m06:21:51.753613 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:21:51.753613 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: drop view if exists AIRBNB.bronze.bronze_hosts__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */
+[0m06:21:52.160664 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.412 seconds
+[0m06:21:52.175836 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a358ba1b-a4a8-487b-8d8b-7c76fa00bb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002438498D3A0>]}
+[0m06:21:52.175836 [info ] [Thread-2 (]: 2 of 8 OK created sql incremental model bronze.bronze_hosts .................... [[32mSUCCESS 0[0m in 4.03s]
+[0m06:21:52.175836 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.bronze_hosts
+[0m06:21:52.175836 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.bronze_listings
+[0m06:21:52.175836 [info ] [Thread-2 (]: 3 of 8 START sql incremental model bronze.bronze_listings ...................... [RUN]
+[0m06:21:52.175836 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.bronze_hosts, now model.aws_dbt_snowflake_project.bronze_listings)
+[0m06:21:52.175836 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.bronze_listings
+[0m06:21:52.175836 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:21:52.191410 [debug] [Thread-2 (]: Began executing node model.aws_dbt_snowflake_project.bronze_listings
+[0m06:21:52.203353 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:21:52.204922 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: create or replace  temporary view AIRBNB.bronze.bronze_listings__dbt_tmp
+  
+  
+  
+  
+  as (
+    
+
+
+SELECT * FROM  AIRBNB.staging.listings
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM AIRBNB.bronze.bronze_listings)
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */;
+[0m06:21:52.914471 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.714 seconds
+[0m06:21:52.914471 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:21:52.914471 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: describe table AIRBNB.bronze.bronze_listings__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */
+[0m06:21:53.273856 [debug] [Thread-2 (]: SQL status: SUCCESS 11 in 0.360 seconds
+[0m06:21:53.288964 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:21:53.288964 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: describe table AIRBNB.bronze.bronze_listings
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */
+[0m06:21:53.650163 [debug] [Thread-2 (]: SQL status: SUCCESS 11 in 0.369 seconds
+[0m06:21:53.665352 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:21:53.665352 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: describe table "AIRBNB"."BRONZE"."BRONZE_LISTINGS"
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */
+[0m06:21:54.012094 [debug] [Thread-2 (]: SQL status: SUCCESS 11 in 0.341 seconds
+[0m06:21:54.012094 [debug] [Thread-2 (]: Writing runtime sql for node "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:21:54.152731 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:21:54.167849 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */;
+[0m06:21:54.545481 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.389 seconds
+[0m06:21:54.560626 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:21:54.560626 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: insert into AIRBNB.bronze.bronze_listings ("LISTING_ID", "HOST_ID", "PROPERTY_TYPE", "ROOM_TYPE", "CITY", "COUNTRY", "ACCOMMODATES", "BEDROOMS", "BATHROOMS", "PRICE_PER_NIGHT", "CREATED_AT")
+        (
+            select "LISTING_ID", "HOST_ID", "PROPERTY_TYPE", "ROOM_TYPE", "CITY", "COUNTRY", "ACCOMMODATES", "BEDROOMS", "BATHROOMS", "PRICE_PER_NIGHT", "CREATED_AT"
+            from AIRBNB.bronze.bronze_listings__dbt_tmp
+        )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */;
+[0m06:21:55.391678 [debug] [Thread-2 (]: SQL status: SUCCESS 0 in 0.831 seconds
+[0m06:21:55.391678 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:21:55.391678 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */
+[0m06:21:55.815374 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.425 seconds
+[0m06:21:55.830497 [debug] [Thread-2 (]: Applying DROP to: AIRBNB.bronze.bronze_listings__dbt_tmp
+[0m06:21:55.830497 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:21:55.830497 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: drop view if exists AIRBNB.bronze.bronze_listings__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */
+[0m06:21:56.221694 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.394 seconds
+[0m06:21:56.221694 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a358ba1b-a4a8-487b-8d8b-7c76fa00bb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002438498E300>]}
+[0m06:21:56.236817 [info ] [Thread-2 (]: 3 of 8 OK created sql incremental model bronze.bronze_listings ................. [[32mSUCCESS 0[0m in 4.05s]
+[0m06:21:56.236817 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.bronze_listings
+[0m06:21:56.236817 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.fact
+[0m06:21:56.236817 [info ] [Thread-2 (]: 4 of 8 START sql table model gold.fact ......................................... [RUN]
+[0m06:21:56.236817 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.bronze_listings, now model.aws_dbt_snowflake_project.fact)
+[0m06:21:56.236817 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.fact
+[0m06:21:56.256124 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.fact"
+[0m06:21:56.259018 [debug] [Thread-2 (]: Began executing node model.aws_dbt_snowflake_project.fact
+[0m06:21:56.312057 [debug] [Thread-2 (]: Writing runtime sql for node "model.aws_dbt_snowflake_project.fact"
+[0m06:21:56.315017 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.fact"
+[0m06:21:56.316056 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.fact: create or replace transient table AIRBNB.gold.fact
+    
+    
+    
+    as (
+
+
+
+SELECT 
+        GOLD_obt.BOOKING_ID, GOLD_obt.LISTING_ID, GOLD_obt.HOST_ID,GOLD_obt.TOTAL_AMOUNT, GOLD_obt.SERVICE_FEE, GOLD_obt.CLEANING_FEE, GOLD_obt.ACCOMMODATES, GOLD_obt.BEDROOMS, GOLD_obt.BATHROOMS, GOLD_obt.PRICE_PER_NIGHT, GOLD_obt.RESPONSE_RATE
+
+FROM
+    
+    
+      AIRBNB.GOLD.OBT AS GOLD_obt
+    
+        
+    
+        LEFT JOIN AIRBNB.GOLD.DIM_LISTINGS AS DIM_listings
+        ON GOLD_obt.listing_id = DIM_listings.listing_id
+        
+        
+    
+        LEFT JOIN AIRBNB.GOLD.DIM_HOSTS AS DIM_hosts
+        ON GOLD_obt.host_id = DIM_hosts.host_id
+        
+        
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.fact"} */;
+[0m06:22:01.268239 [debug] [Thread-2 (]: SQL status: SUCCESS 1925792 in 4.957 seconds
+[0m06:22:01.268239 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a358ba1b-a4a8-487b-8d8b-7c76fa00bb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243859ABEF0>]}
+[0m06:22:01.283438 [info ] [Thread-2 (]: 4 of 8 OK created sql table model gold.fact .................................... [[32mSUCCESS 1925792[0m in 5.03s]
+[0m06:22:01.283438 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.fact
+[0m06:22:01.283438 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.obt
+[0m06:22:01.283438 [info ] [Thread-2 (]: 5 of 8 START sql table model gold.obt .......................................... [RUN]
+[0m06:22:01.283438 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.fact, now model.aws_dbt_snowflake_project.obt)
+[0m06:22:01.283438 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.obt
+[0m06:22:01.304993 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.obt"
+[0m06:22:01.306075 [debug] [Thread-2 (]: Began executing node model.aws_dbt_snowflake_project.obt
+[0m06:22:01.306075 [debug] [Thread-2 (]: Writing runtime sql for node "model.aws_dbt_snowflake_project.obt"
+[0m06:22:01.306075 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.obt"
+[0m06:22:01.306075 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.obt: create or replace transient table AIRBNB.gold.obt
+    
+    
+    
+    as (
+
+
+
+SELECT 
+    
+        SILVER_bookings.*,
+    
+        SILVER_listings.HOST_ID, SILVER_listings.PROPERTY_TYPE, SILVER_listings.ROOM_TYPE, SILVER_listings.CITY, SILVER_listings.COUNTRY, SILVER_listings.ACCOMMODATES, SILVER_listings.BEDROOMS, SILVER_listings.BATHROOMS, SILVER_listings.PRICE_PER_NIGHT, silver_listings.PRICE_PER_NIGHT_TAG, SILVER_listings.CREATED_AT AS LISTING_CREATED_AT,
+    
+        SILVER_hosts.HOST_NAME, SILVER_hosts.HOST_SINCE, SILVER_hosts.IS_SUPERHOST, SILVER_hosts.RESPONSE_RATE, SILVER_hosts.RESPONSE_RATE_QUALITY, SILVER_hosts.CREATED_AT AS HOST_CREATED_AT
+    
+FROM
+    
+    
+      AIRBNB.SILVER.SILVER_BOOKINGS AS SILVER_bookings
+    
+        
+    
+        LEFT JOIN AIRBNB.SILVER.SILVER_LISTINGS AS SILVER_listings
+        ON SILVER_bookings.listing_id = SILVER_listings.listing_id
+        
+        
+    
+        LEFT JOIN AIRBNB.SILVER.SILVER_HOSTS AS SILVER_hosts
+        ON SILVER_listings.host_id = SILVER_hosts.host_id
+        
+        
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.obt"} */;
+[0m06:22:03.856542 [debug] [Thread-2 (]: SQL status: SUCCESS 5000 in 2.538 seconds
+[0m06:22:03.856542 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a358ba1b-a4a8-487b-8d8b-7c76fa00bb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243859A9CD0>]}
+[0m06:22:03.856542 [info ] [Thread-2 (]: 5 of 8 OK created sql table model gold.obt ..................................... [[32mSUCCESS 5000[0m in 2.57s]
+[0m06:22:03.872152 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.obt
+[0m06:22:03.872152 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.silver_bookings
+[0m06:22:03.872152 [info ] [Thread-2 (]: 6 of 8 START sql incremental model silver.silver_bookings ...................... [RUN]
+[0m06:22:03.872152 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.obt, now model.aws_dbt_snowflake_project.silver_bookings)
+[0m06:22:03.879427 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.silver_bookings
+[0m06:22:04.093596 [debug] [Thread-2 (]: Compilation Error in model silver_bookings (models\silver\silver_bookings.sql)
+  'multiply' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m06:22:04.093596 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a358ba1b-a4a8-487b-8d8b-7c76fa00bb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002438472D220>]}
+[0m06:22:04.093596 [error] [Thread-2 (]: 6 of 8 ERROR creating sql incremental model silver.silver_bookings ............. [[31mERROR[0m in 0.22s]
+[0m06:22:04.093596 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.silver_bookings
+[0m06:22:04.093596 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.silver_hosts
+[0m06:22:04.093596 [debug] [Thread-5 (]: Marking all children of 'model.aws_dbt_snowflake_project.silver_bookings' to be skipped because of status 'error'.  Reason: Compilation Error in model silver_bookings (models\silver\silver_bookings.sql)
+  'multiply' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps"..
+[0m06:22:04.093596 [info ] [Thread-2 (]: 7 of 8 START sql incremental model silver.silver_hosts ......................... [RUN]
+[0m06:22:04.093596 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.silver_bookings, now model.aws_dbt_snowflake_project.silver_hosts)
+[0m06:22:04.093596 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.silver_hosts
+[0m06:22:04.112474 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:22:04.114472 [debug] [Thread-2 (]: Began executing node model.aws_dbt_snowflake_project.silver_hosts
+[0m06:22:04.125890 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:22:04.125944 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: create or replace  temporary view AIRBNB.silver.silver_hosts__dbt_tmp
+  
+  
+  
+  
+  as (
+    
+
+SELECT 
+    HOST_ID,
+    REPLACE(HOST_NAME, ' ', '_') AS HOST_NAME,
+    HOST_SINCE AS HOST_SINCE,
+    IS_SUPERHOST AS IS_SUPERHOST,
+    RESPONSE_RATE AS RESPONSE_RATE,
+    CASE 
+    WHEN RESPONSE_RATE > 95 THEN 'VERY GOOD'
+    WHEN RESPONSE_RATE > 80 THEN 'GOOD'
+    WHEN RESPONSE_RATE > 60 THEN 'FAIR'
+    ELSE 'POOR'
+    END AS RESPONSE_RATE_QUALITY,
+    CREATED_AT AS CREATED_AT
+FROM 
+    AIRBNB.bronze.bronze_hosts
+  )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */;
+[0m06:22:04.705558 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.588 seconds
+[0m06:22:04.705558 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:22:04.720675 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: describe table AIRBNB.silver.silver_hosts__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */
+[0m06:22:05.050739 [debug] [Thread-2 (]: SQL status: SUCCESS 7 in 0.342 seconds
+[0m06:22:05.081552 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:22:05.081552 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: describe table AIRBNB.silver.silver_hosts
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */
+[0m06:22:05.378436 [debug] [Thread-2 (]: SQL status: SUCCESS 7 in 0.306 seconds
+[0m06:22:05.394033 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:22:05.394033 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: describe table "AIRBNB"."SILVER"."SILVER_HOSTS"
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */
+[0m06:22:05.790216 [debug] [Thread-2 (]: SQL status: SUCCESS 7 in 0.390 seconds
+[0m06:22:05.832881 [debug] [Thread-2 (]: Writing runtime sql for node "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:22:05.832881 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:22:05.832881 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */;
+[0m06:22:06.273568 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.442 seconds
+[0m06:22:06.273568 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:22:06.273568 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: merge into AIRBNB.silver.silver_hosts as DBT_INTERNAL_DEST
+        using AIRBNB.silver.silver_hosts__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.HOST_ID = DBT_INTERNAL_DEST.HOST_ID))
+
+    
+    when matched then update set
+        "HOST_ID" = DBT_INTERNAL_SOURCE."HOST_ID","HOST_NAME" = DBT_INTERNAL_SOURCE."HOST_NAME","HOST_SINCE" = DBT_INTERNAL_SOURCE."HOST_SINCE","IS_SUPERHOST" = DBT_INTERNAL_SOURCE."IS_SUPERHOST","RESPONSE_RATE" = DBT_INTERNAL_SOURCE."RESPONSE_RATE","RESPONSE_RATE_QUALITY" = DBT_INTERNAL_SOURCE."RESPONSE_RATE_QUALITY","CREATED_AT" = DBT_INTERNAL_SOURCE."CREATED_AT"
+    
+
+    when not matched then insert
+        ("HOST_ID", "HOST_NAME", "HOST_SINCE", "IS_SUPERHOST", "RESPONSE_RATE", "RESPONSE_RATE_QUALITY", "CREATED_AT")
+    values
+        ("HOST_ID", "HOST_NAME", "HOST_SINCE", "IS_SUPERHOST", "RESPONSE_RATE", "RESPONSE_RATE_QUALITY", "CREATED_AT")
+
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */;
+[0m06:22:07.684991 [debug] [Thread-2 (]: SQL status: SUCCESS 200 in 1.398 seconds
+[0m06:22:07.684991 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:22:07.684991 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */
+[0m06:22:08.327230 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.635 seconds
+[0m06:22:08.327230 [debug] [Thread-2 (]: Applying DROP to: AIRBNB.silver.silver_hosts__dbt_tmp
+[0m06:22:08.327230 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:22:08.327230 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: drop view if exists AIRBNB.silver.silver_hosts__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */
+[0m06:22:08.734405 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.405 seconds
+[0m06:22:08.750106 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a358ba1b-a4a8-487b-8d8b-7c76fa00bb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243848F6C30>]}
+[0m06:22:08.750106 [info ] [Thread-2 (]: 7 of 8 OK created sql incremental model silver.silver_hosts .................... [[32mSUCCESS 200[0m in 4.66s]
+[0m06:22:08.750106 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.silver_hosts
+[0m06:22:08.750106 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.silver_listings
+[0m06:22:08.765660 [info ] [Thread-2 (]: 8 of 8 START sql incremental model silver.silver_listings ...................... [RUN]
+[0m06:22:08.765660 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.silver_hosts, now model.aws_dbt_snowflake_project.silver_listings)
+[0m06:22:08.771544 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.silver_listings
+[0m06:22:08.776349 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:22:08.785179 [debug] [Thread-2 (]: Began executing node model.aws_dbt_snowflake_project.silver_listings
+[0m06:22:08.793217 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:22:08.793217 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: create or replace  temporary view AIRBNB.silver.silver_listings__dbt_tmp
+  
+  
+  
+  
+  as (
+    
+
+SELECT 
+    LISTING_ID,
+    HOST_ID,
+    PROPERTY_TYPE,
+    ROOM_TYPE,
+    CITY,
+    COUNTRY,
+    ACCOMMODATES,
+    BEDROOMS,
+    BATHROOMS,
+    PRICE_PER_NIGHT,
+    
+    CASE 
+        WHEN CAST(PRICE_PER_NIGHT AS INT) < 100 THEN 'low'
+        WHEN CAST(PRICE_PER_NIGHT AS INT) < 200 THEN 'medium'
+        ELSE 'high'
+    END
+ AS PRICE_PER_NIGHT_TAG,
+    CREATED_AT
+FROM 
+    AIRBNB.bronze.bronze_listings
+  )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */;
+[0m06:22:09.361719 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.569 seconds
+[0m06:22:09.377344 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:22:09.377344 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: describe table AIRBNB.silver.silver_listings__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */
+[0m06:22:09.705483 [debug] [Thread-2 (]: SQL status: SUCCESS 12 in 0.322 seconds
+[0m06:22:09.721078 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:22:09.721078 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: describe table AIRBNB.silver.silver_listings
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */
+[0m06:22:10.035448 [debug] [Thread-2 (]: SQL status: SUCCESS 12 in 0.310 seconds
+[0m06:22:10.035448 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:22:10.035448 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: describe table "AIRBNB"."SILVER"."SILVER_LISTINGS"
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */
+[0m06:22:10.366244 [debug] [Thread-2 (]: SQL status: SUCCESS 12 in 0.328 seconds
+[0m06:22:10.381409 [debug] [Thread-2 (]: Writing runtime sql for node "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:22:10.381409 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:22:10.381409 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */;
+[0m06:22:10.771984 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.386 seconds
+[0m06:22:10.771984 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:22:10.771984 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: merge into AIRBNB.silver.silver_listings as DBT_INTERNAL_DEST
+        using AIRBNB.silver.silver_listings__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.LISTING_ID = DBT_INTERNAL_DEST.LISTING_ID))
+
+    
+    when matched then update set
+        "LISTING_ID" = DBT_INTERNAL_SOURCE."LISTING_ID","HOST_ID" = DBT_INTERNAL_SOURCE."HOST_ID","PROPERTY_TYPE" = DBT_INTERNAL_SOURCE."PROPERTY_TYPE","ROOM_TYPE" = DBT_INTERNAL_SOURCE."ROOM_TYPE","CITY" = DBT_INTERNAL_SOURCE."CITY","COUNTRY" = DBT_INTERNAL_SOURCE."COUNTRY","ACCOMMODATES" = DBT_INTERNAL_SOURCE."ACCOMMODATES","BEDROOMS" = DBT_INTERNAL_SOURCE."BEDROOMS","BATHROOMS" = DBT_INTERNAL_SOURCE."BATHROOMS","PRICE_PER_NIGHT" = DBT_INTERNAL_SOURCE."PRICE_PER_NIGHT","PRICE_PER_NIGHT_TAG" = DBT_INTERNAL_SOURCE."PRICE_PER_NIGHT_TAG","CREATED_AT" = DBT_INTERNAL_SOURCE."CREATED_AT"
+    
+
+    when not matched then insert
+        ("LISTING_ID", "HOST_ID", "PROPERTY_TYPE", "ROOM_TYPE", "CITY", "COUNTRY", "ACCOMMODATES", "BEDROOMS", "BATHROOMS", "PRICE_PER_NIGHT", "PRICE_PER_NIGHT_TAG", "CREATED_AT")
+    values
+        ("LISTING_ID", "HOST_ID", "PROPERTY_TYPE", "ROOM_TYPE", "CITY", "COUNTRY", "ACCOMMODATES", "BEDROOMS", "BATHROOMS", "PRICE_PER_NIGHT", "PRICE_PER_NIGHT_TAG", "CREATED_AT")
+
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */;
+[0m06:22:11.908247 [debug] [Thread-2 (]: SQL status: SUCCESS 500 in 1.129 seconds
+[0m06:22:11.912249 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:22:11.915248 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */
+[0m06:22:12.638815 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.735 seconds
+[0m06:22:12.654420 [debug] [Thread-2 (]: Applying DROP to: AIRBNB.silver.silver_listings__dbt_tmp
+[0m06:22:12.654420 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:22:12.654420 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: drop view if exists AIRBNB.silver.silver_listings__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */
+[0m06:22:13.078897 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.425 seconds
+[0m06:22:13.078897 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a358ba1b-a4a8-487b-8d8b-7c76fa00bb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002438498E2A0>]}
+[0m06:22:13.078897 [info ] [Thread-2 (]: 8 of 8 OK created sql incremental model silver.silver_listings ................. [[32mSUCCESS 500[0m in 4.31s]
+[0m06:22:13.078897 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.silver_listings
+[0m06:22:13.078897 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.bookings
+[0m06:22:13.093979 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.silver_listings, now model.aws_dbt_snowflake_project.bookings)
+[0m06:22:13.093979 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.bookings
+[0m06:22:13.093979 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.bookings"
+[0m06:22:13.093979 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.bookings
+[0m06:22:13.093979 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.hosts
+[0m06:22:13.093979 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.bookings, now model.aws_dbt_snowflake_project.hosts)
+[0m06:22:13.093979 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.hosts
+[0m06:22:13.113438 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.hosts"
+[0m06:22:13.116259 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.hosts
+[0m06:22:13.118477 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.listings
+[0m06:22:13.118477 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.hosts, now model.aws_dbt_snowflake_project.listings)
+[0m06:22:13.118477 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.listings
+[0m06:22:13.118477 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.listings"
+[0m06:22:13.118477 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.listings
+[0m06:22:13.118477 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:22:13.118477 [debug] [MainThread]: Connection 'list_AIRBNB' was left open.
+[0m06:22:13.118477 [debug] [MainThread]: On list_AIRBNB: Close
+[0m06:22:13.703790 [debug] [MainThread]: Connection 'list_AIRBNB_gold' was left open.
+[0m06:22:13.703790 [debug] [MainThread]: On list_AIRBNB_gold: Close
+[0m06:22:14.409714 [debug] [MainThread]: Connection 'model.aws_dbt_snowflake_project.listings' was left open.
+[0m06:22:14.409714 [debug] [MainThread]: On model.aws_dbt_snowflake_project.listings: Close
+[0m06:22:15.005691 [info ] [MainThread]: 
+[0m06:22:15.005691 [info ] [MainThread]: Finished running 6 incremental models, 2 table models in 0 hours 0 minutes and 51.22 seconds (51.22s).
+[0m06:22:15.005691 [debug] [MainThread]: Command end result
+[0m06:22:15.066793 [debug] [MainThread]: Wrote artifact WritableManifest to E:\aws_dbt_snowflake\aws_dbt_snowflake_project\target\manifest.json
+[0m06:22:15.068850 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\aws_dbt_snowflake\aws_dbt_snowflake_project\target\semantic_manifest.json
+[0m06:22:15.090884 [debug] [MainThread]: Wrote artifact RunExecutionResult to E:\aws_dbt_snowflake\aws_dbt_snowflake_project\target\run_results.json
+[0m06:22:15.091884 [info ] [MainThread]: 
+[0m06:22:15.092886 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m06:22:15.093882 [info ] [MainThread]: 
+[0m06:22:15.094893 [error] [MainThread]: [31mFailure in model silver_bookings (models\silver\silver_bookings.sql)[0m
+[0m06:22:15.095885 [error] [MainThread]:   Compilation Error in model silver_bookings (models\silver\silver_bookings.sql)
+  'multiply' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m06:22:15.097888 [info ] [MainThread]: 
+[0m06:22:15.099891 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=8
+[0m06:22:15.102886 [debug] [MainThread]: Command `dbt run` failed at 06:22:15.102886 after 60.86 seconds
+[0m06:22:15.103887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243FFC42DB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243FFC428D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024381398BC0>]}
+[0m06:22:15.104888 [debug] [MainThread]: Flushing usage events
+[0m06:22:21.952058 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:24:24.248185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F0239910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F0238DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F0238CB0>]}
+
+
+============================== 06:24:24.263855 | 3fce1b5d-fd53-4bab-a021-e4f35d1aaaff ==============================
+[0m06:24:24.263855 [info ] [MainThread]: Running with dbt=1.11.7
+[0m06:24:24.263855 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\.dbt', 'invocation_command': 'dbt run', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'E:\\aws_dbt_snowflake\\aws_dbt_snowflake_project\\logs'}
+[0m06:24:25.110660 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m06:24:25.110660 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m06:24:25.110660 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m06:24:25.485672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3fce1b5d-fd53-4bab-a021-e4f35d1aaaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F21AE2A0>]}
+[0m06:24:25.675360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3fce1b5d-fd53-4bab-a021-e4f35d1aaaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F24A29F0>]}
+[0m06:24:25.675360 [info ] [MainThread]: Registered adapter: snowflake=1.11.3
+[0m06:24:26.191922 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m06:24:26.520044 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:24:26.520044 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m06:24:26.520044 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:24:26.645047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3fce1b5d-fd53-4bab-a021-e4f35d1aaaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F27A7BC0>]}
+[0m06:24:26.867974 [debug] [MainThread]: Wrote artifact WritableManifest to E:\aws_dbt_snowflake\aws_dbt_snowflake_project\target\manifest.json
+[0m06:24:26.867974 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\aws_dbt_snowflake\aws_dbt_snowflake_project\target\semantic_manifest.json
+[0m06:24:26.930419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3fce1b5d-fd53-4bab-a021-e4f35d1aaaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F27D0D40>]}
+[0m06:24:26.930419 [info ] [MainThread]: Found 11 models, 3 analyses, 3 snapshots, 1 test, 3 sources, 525 macros
+[0m06:24:26.930419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3fce1b5d-fd53-4bab-a021-e4f35d1aaaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F2726450>]}
+[0m06:24:26.930419 [info ] [MainThread]: 
+[0m06:24:26.930419 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m06:24:26.945585 [info ] [MainThread]: 
+[0m06:24:26.948673 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m06:24:26.950772 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m06:24:27.076823 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m06:24:27.076823 [debug] [ThreadPool]: On list_AIRBNB: show terse schemas in database AIRBNB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+[0m06:24:27.076823 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:24:29.031840 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.949 seconds
+[0m06:24:29.047028 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m06:24:29.047028 [debug] [ThreadPool]: On list_AIRBNB: show terse schemas in database AIRBNB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+[0m06:24:29.408824 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 0.368 seconds
+[0m06:24:29.408824 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m06:24:29.408824 [debug] [ThreadPool]: On list_AIRBNB: show terse schemas in database AIRBNB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+[0m06:24:29.736528 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 0.315 seconds
+[0m06:24:29.752090 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_bronze'
+[0m06:24:29.767753 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_bronze"
+[0m06:24:29.767753 [debug] [ThreadPool]: On list_AIRBNB_bronze: show objects in AIRBNB.bronze
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_AIRBNB_bronze"} */;
+[0m06:24:29.783378 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:24:31.225934 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.455 seconds
+[0m06:24:31.241412 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AIRBNB_bronze, now list_AIRBNB_silver)
+[0m06:24:31.257006 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_silver"
+[0m06:24:31.257006 [debug] [ThreadPool]: On list_AIRBNB_silver: show objects in AIRBNB.silver
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_AIRBNB_silver"} */;
+[0m06:24:31.665402 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.404 seconds
+[0m06:24:31.665402 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_AIRBNB_silver, now list_AIRBNB_gold)
+[0m06:24:31.665402 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_gold"
+[0m06:24:31.665402 [debug] [ThreadPool]: On list_AIRBNB_gold: show objects in AIRBNB.gold
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "connection_name": "list_AIRBNB_gold"} */;
+[0m06:24:32.089949 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.420 seconds
+[0m06:24:32.105109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3fce1b5d-fd53-4bab-a021-e4f35d1aaaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F324FD70>]}
+[0m06:24:32.120682 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.bronze_bookings
+[0m06:24:32.120682 [info ] [Thread-2 (]: 1 of 8 START sql incremental model bronze.bronze_bookings ...................... [RUN]
+[0m06:24:32.120682 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.aws_dbt_snowflake_project.bronze_bookings'
+[0m06:24:32.120682 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.bronze_bookings
+[0m06:24:32.148578 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:24:32.148578 [debug] [Thread-2 (]: Began executing node model.aws_dbt_snowflake_project.bronze_bookings
+[0m06:24:32.258070 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:24:32.258070 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: create or replace  temporary view AIRBNB.bronze.bronze_bookings__dbt_tmp
+  
+  
+  
+  
+  as (
+    
+
+
+SELECT * FROM  AIRBNB.staging.bookings
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM AIRBNB.bronze.bronze_bookings)
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */;
+[0m06:24:32.258070 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m06:24:34.111009 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.852 seconds
+[0m06:24:34.142314 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:24:34.142314 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: describe table AIRBNB.bronze.bronze_bookings__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */
+[0m06:24:34.486017 [debug] [Thread-2 (]: SQL status: SUCCESS 9 in 0.334 seconds
+[0m06:24:34.501630 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:24:34.501630 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: describe table AIRBNB.bronze.bronze_bookings
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */
+[0m06:24:34.835045 [debug] [Thread-2 (]: SQL status: SUCCESS 9 in 0.332 seconds
+[0m06:24:34.850223 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:24:34.850223 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: describe table "AIRBNB"."BRONZE"."BRONZE_BOOKINGS"
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */
+[0m06:24:35.177972 [debug] [Thread-2 (]: SQL status: SUCCESS 9 in 0.325 seconds
+[0m06:24:35.224881 [debug] [Thread-2 (]: Writing runtime sql for node "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:24:35.224881 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:24:35.224881 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */;
+[0m06:24:35.631600 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.401 seconds
+[0m06:24:35.631600 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:24:35.631600 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: insert into AIRBNB.bronze.bronze_bookings ("BOOKING_ID", "LISTING_ID", "BOOKING_DATE", "NIGHTS_BOOKED", "BOOKING_AMOUNT", "CLEANING_FEE", "SERVICE_FEE", "BOOKING_STATUS", "CREATED_AT")
+        (
+            select "BOOKING_ID", "LISTING_ID", "BOOKING_DATE", "NIGHTS_BOOKED", "BOOKING_AMOUNT", "CLEANING_FEE", "SERVICE_FEE", "BOOKING_STATUS", "CREATED_AT"
+            from AIRBNB.bronze.bronze_bookings__dbt_tmp
+        )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */;
+[0m06:24:36.432712 [debug] [Thread-2 (]: SQL status: SUCCESS 0 in 0.801 seconds
+[0m06:24:36.432712 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:24:36.432712 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */
+[0m06:24:36.825401 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.387 seconds
+[0m06:24:36.841031 [debug] [Thread-2 (]: Applying DROP to: AIRBNB.bronze.bronze_bookings__dbt_tmp
+[0m06:24:36.856636 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_bookings"
+[0m06:24:36.856636 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_bookings: drop view if exists AIRBNB.bronze.bronze_bookings__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_bookings"} */
+[0m06:24:37.262883 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.390 seconds
+[0m06:24:37.300030 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3fce1b5d-fd53-4bab-a021-e4f35d1aaaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205EF5F35F0>]}
+[0m06:24:37.301046 [info ] [Thread-2 (]: 1 of 8 OK created sql incremental model bronze.bronze_bookings ................. [[32mSUCCESS 0[0m in 5.18s]
+[0m06:24:37.303218 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.bronze_bookings
+[0m06:24:37.304218 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.bronze_hosts
+[0m06:24:37.305218 [info ] [Thread-2 (]: 2 of 8 START sql incremental model bronze.bronze_hosts ......................... [RUN]
+[0m06:24:37.306222 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.bronze_bookings, now model.aws_dbt_snowflake_project.bronze_hosts)
+[0m06:24:37.307254 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.bronze_hosts
+[0m06:24:37.314354 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:24:37.315326 [debug] [Thread-2 (]: Began executing node model.aws_dbt_snowflake_project.bronze_hosts
+[0m06:24:37.316404 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:24:37.316404 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: create or replace  temporary view AIRBNB.bronze.bronze_hosts__dbt_tmp
+  
+  
+  
+  
+  as (
+    
+
+
+SELECT * FROM  AIRBNB.staging.hosts
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM AIRBNB.bronze.bronze_hosts)
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */;
+[0m06:24:37.999694 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.682 seconds
+[0m06:24:37.999694 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:24:37.999694 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: describe table AIRBNB.bronze.bronze_hosts__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */
+[0m06:24:38.351330 [debug] [Thread-2 (]: SQL status: SUCCESS 6 in 0.340 seconds
+[0m06:24:38.360273 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:24:38.361350 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: describe table AIRBNB.bronze.bronze_hosts
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */
+[0m06:24:38.783228 [debug] [Thread-2 (]: SQL status: SUCCESS 6 in 0.432 seconds
+[0m06:24:38.798859 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:24:38.798859 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: describe table "AIRBNB"."BRONZE"."BRONZE_HOSTS"
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */
+[0m06:24:39.140656 [debug] [Thread-2 (]: SQL status: SUCCESS 6 in 0.331 seconds
+[0m06:24:39.156282 [debug] [Thread-2 (]: Writing runtime sql for node "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:24:39.156282 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:24:39.156282 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */;
+[0m06:24:39.599779 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.438 seconds
+[0m06:24:39.599779 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:24:39.599779 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: insert into AIRBNB.bronze.bronze_hosts ("HOST_ID", "HOST_NAME", "HOST_SINCE", "IS_SUPERHOST", "RESPONSE_RATE", "CREATED_AT")
+        (
+            select "HOST_ID", "HOST_NAME", "HOST_SINCE", "IS_SUPERHOST", "RESPONSE_RATE", "CREATED_AT"
+            from AIRBNB.bronze.bronze_hosts__dbt_tmp
+        )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */;
+[0m06:24:40.164889 [debug] [Thread-2 (]: SQL status: SUCCESS 0 in 0.566 seconds
+[0m06:24:40.164889 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:24:40.164889 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */
+[0m06:24:40.603005 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.430 seconds
+[0m06:24:40.603005 [debug] [Thread-2 (]: Applying DROP to: AIRBNB.bronze.bronze_hosts__dbt_tmp
+[0m06:24:40.603005 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_hosts"
+[0m06:24:40.618644 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_hosts: drop view if exists AIRBNB.bronze.bronze_hosts__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_hosts"} */
+[0m06:24:41.026724 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.420 seconds
+[0m06:24:41.041852 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3fce1b5d-fd53-4bab-a021-e4f35d1aaaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F3307C50>]}
+[0m06:24:41.041852 [info ] [Thread-2 (]: 2 of 8 OK created sql incremental model bronze.bronze_hosts .................... [[32mSUCCESS 0[0m in 3.74s]
+[0m06:24:41.041852 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.bronze_hosts
+[0m06:24:41.041852 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.bronze_listings
+[0m06:24:41.041852 [info ] [Thread-2 (]: 3 of 8 START sql incremental model bronze.bronze_listings ...................... [RUN]
+[0m06:24:41.041852 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.bronze_hosts, now model.aws_dbt_snowflake_project.bronze_listings)
+[0m06:24:41.059187 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.bronze_listings
+[0m06:24:41.062949 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:24:41.062949 [debug] [Thread-2 (]: Began executing node model.aws_dbt_snowflake_project.bronze_listings
+[0m06:24:41.081117 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:24:41.081117 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: create or replace  temporary view AIRBNB.bronze.bronze_listings__dbt_tmp
+  
+  
+  
+  
+  as (
+    
+
+
+SELECT * FROM  AIRBNB.staging.listings
+
+
+    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM AIRBNB.bronze.bronze_listings)
+
+  )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */;
+[0m06:24:41.746969 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.667 seconds
+[0m06:24:41.746969 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:24:41.746969 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: describe table AIRBNB.bronze.bronze_listings__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */
+[0m06:24:42.124675 [debug] [Thread-2 (]: SQL status: SUCCESS 11 in 0.371 seconds
+[0m06:24:42.124675 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:24:42.124675 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: describe table AIRBNB.bronze.bronze_listings
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */
+[0m06:24:42.500151 [debug] [Thread-2 (]: SQL status: SUCCESS 11 in 0.380 seconds
+[0m06:24:42.515342 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:24:42.515342 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: describe table "AIRBNB"."BRONZE"."BRONZE_LISTINGS"
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */
+[0m06:24:42.860665 [debug] [Thread-2 (]: SQL status: SUCCESS 11 in 0.341 seconds
+[0m06:24:42.860665 [debug] [Thread-2 (]: Writing runtime sql for node "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:24:42.860665 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:24:42.860665 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */;
+[0m06:24:43.237267 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.367 seconds
+[0m06:24:43.237267 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:24:43.237267 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: insert into AIRBNB.bronze.bronze_listings ("LISTING_ID", "HOST_ID", "PROPERTY_TYPE", "ROOM_TYPE", "CITY", "COUNTRY", "ACCOMMODATES", "BEDROOMS", "BATHROOMS", "PRICE_PER_NIGHT", "CREATED_AT")
+        (
+            select "LISTING_ID", "HOST_ID", "PROPERTY_TYPE", "ROOM_TYPE", "CITY", "COUNTRY", "ACCOMMODATES", "BEDROOMS", "BATHROOMS", "PRICE_PER_NIGHT", "CREATED_AT"
+            from AIRBNB.bronze.bronze_listings__dbt_tmp
+        )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */;
+[0m06:24:43.723362 [debug] [Thread-2 (]: SQL status: SUCCESS 0 in 0.481 seconds
+[0m06:24:43.723362 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:24:43.723362 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */
+[0m06:24:44.161135 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.434 seconds
+[0m06:24:44.161135 [debug] [Thread-2 (]: Applying DROP to: AIRBNB.bronze.bronze_listings__dbt_tmp
+[0m06:24:44.161135 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.bronze_listings"
+[0m06:24:44.161135 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.bronze_listings: drop view if exists AIRBNB.bronze.bronze_listings__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.bronze_listings"} */
+[0m06:24:44.598504 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.421 seconds
+[0m06:24:44.621409 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3fce1b5d-fd53-4bab-a021-e4f35d1aaaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F3166780>]}
+[0m06:24:44.630122 [info ] [Thread-2 (]: 3 of 8 OK created sql incremental model bronze.bronze_listings ................. [[32mSUCCESS 0[0m in 3.58s]
+[0m06:24:44.637170 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.bronze_listings
+[0m06:24:44.638170 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.fact
+[0m06:24:44.640173 [info ] [Thread-2 (]: 4 of 8 START sql table model gold.fact ......................................... [RUN]
+[0m06:24:44.642122 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.bronze_listings, now model.aws_dbt_snowflake_project.fact)
+[0m06:24:44.645262 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.fact
+[0m06:24:44.648676 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.fact"
+[0m06:24:44.659891 [debug] [Thread-2 (]: Began executing node model.aws_dbt_snowflake_project.fact
+[0m06:24:44.714960 [debug] [Thread-2 (]: Writing runtime sql for node "model.aws_dbt_snowflake_project.fact"
+[0m06:24:44.718957 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.fact"
+[0m06:24:44.718957 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.fact: create or replace transient table AIRBNB.gold.fact
+    
+    
+    
+    as (
+
+
+
+SELECT 
+        GOLD_obt.BOOKING_ID, GOLD_obt.LISTING_ID, GOLD_obt.HOST_ID,GOLD_obt.TOTAL_AMOUNT, GOLD_obt.SERVICE_FEE, GOLD_obt.CLEANING_FEE, GOLD_obt.ACCOMMODATES, GOLD_obt.BEDROOMS, GOLD_obt.BATHROOMS, GOLD_obt.PRICE_PER_NIGHT, GOLD_obt.RESPONSE_RATE
+
+FROM
+    
+    
+      AIRBNB.GOLD.OBT AS GOLD_obt
+    
+        
+    
+        LEFT JOIN AIRBNB.GOLD.DIM_LISTINGS AS DIM_listings
+        ON GOLD_obt.listing_id = DIM_listings.listing_id
+        
+        
+    
+        LEFT JOIN AIRBNB.GOLD.DIM_HOSTS AS DIM_hosts
+        ON GOLD_obt.host_id = DIM_hosts.host_id
+        
+        
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.fact"} */;
+[0m06:24:49.132881 [debug] [Thread-2 (]: SQL status: SUCCESS 1925792 in 4.427 seconds
+[0m06:24:49.148005 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3fce1b5d-fd53-4bab-a021-e4f35d1aaaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F32E0B30>]}
+[0m06:24:49.148005 [info ] [Thread-2 (]: 4 of 8 OK created sql table model gold.fact .................................... [[32mSUCCESS 1925792[0m in 4.51s]
+[0m06:24:49.148005 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.fact
+[0m06:24:49.148005 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.obt
+[0m06:24:49.148005 [info ] [Thread-2 (]: 5 of 8 START sql table model gold.obt .......................................... [RUN]
+[0m06:24:49.148005 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.fact, now model.aws_dbt_snowflake_project.obt)
+[0m06:24:49.148005 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.obt
+[0m06:24:49.163628 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.obt"
+[0m06:24:49.163628 [debug] [Thread-2 (]: Began executing node model.aws_dbt_snowflake_project.obt
+[0m06:24:49.163628 [debug] [Thread-2 (]: Writing runtime sql for node "model.aws_dbt_snowflake_project.obt"
+[0m06:24:49.185116 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.obt"
+[0m06:24:49.186121 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.obt: create or replace transient table AIRBNB.gold.obt
+    
+    
+    
+    as (
+
+
+
+SELECT 
+    
+        SILVER_bookings.*,
+    
+        SILVER_listings.HOST_ID, SILVER_listings.PROPERTY_TYPE, SILVER_listings.ROOM_TYPE, SILVER_listings.CITY, SILVER_listings.COUNTRY, SILVER_listings.ACCOMMODATES, SILVER_listings.BEDROOMS, SILVER_listings.BATHROOMS, SILVER_listings.PRICE_PER_NIGHT, silver_listings.PRICE_PER_NIGHT_TAG, SILVER_listings.CREATED_AT AS LISTING_CREATED_AT,
+    
+        SILVER_hosts.HOST_NAME, SILVER_hosts.HOST_SINCE, SILVER_hosts.IS_SUPERHOST, SILVER_hosts.RESPONSE_RATE, SILVER_hosts.RESPONSE_RATE_QUALITY, SILVER_hosts.CREATED_AT AS HOST_CREATED_AT
+    
+FROM
+    
+    
+      AIRBNB.SILVER.SILVER_BOOKINGS AS SILVER_bookings
+    
+        
+    
+        LEFT JOIN AIRBNB.SILVER.SILVER_LISTINGS AS SILVER_listings
+        ON SILVER_bookings.listing_id = SILVER_listings.listing_id
+        
+        
+    
+        LEFT JOIN AIRBNB.SILVER.SILVER_HOSTS AS SILVER_hosts
+        ON SILVER_listings.host_id = SILVER_hosts.host_id
+        
+        
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.obt"} */;
+[0m06:24:51.013800 [debug] [Thread-2 (]: SQL status: SUCCESS 5000 in 1.832 seconds
+[0m06:24:51.013800 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3fce1b5d-fd53-4bab-a021-e4f35d1aaaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F32E0FE0>]}
+[0m06:24:51.013800 [info ] [Thread-2 (]: 5 of 8 OK created sql table model gold.obt ..................................... [[32mSUCCESS 5000[0m in 1.87s]
+[0m06:24:51.013800 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.obt
+[0m06:24:51.013800 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.silver_bookings
+[0m06:24:51.013800 [info ] [Thread-2 (]: 6 of 8 START sql incremental model silver.silver_bookings ...................... [RUN]
+[0m06:24:51.028907 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.obt, now model.aws_dbt_snowflake_project.silver_bookings)
+[0m06:24:51.028907 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.silver_bookings
+[0m06:24:51.028907 [debug] [Thread-2 (]: Compilation Error in model silver_bookings (models\silver\silver_bookings.sql)
+  'multiply' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m06:24:51.028907 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3fce1b5d-fd53-4bab-a021-e4f35d1aaaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F32D0A10>]}
+[0m06:24:51.045350 [error] [Thread-2 (]: 6 of 8 ERROR creating sql incremental model silver.silver_bookings ............. [[31mERROR[0m in 0.02s]
+[0m06:24:51.046648 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.silver_bookings
+[0m06:24:51.047646 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.silver_hosts
+[0m06:24:51.049595 [debug] [Thread-5 (]: Marking all children of 'model.aws_dbt_snowflake_project.silver_bookings' to be skipped because of status 'error'.  Reason: Compilation Error in model silver_bookings (models\silver\silver_bookings.sql)
+  'multiply' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps"..
+[0m06:24:51.048644 [info ] [Thread-2 (]: 7 of 8 START sql incremental model silver.silver_hosts ......................... [RUN]
+[0m06:24:51.051618 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.silver_bookings, now model.aws_dbt_snowflake_project.silver_hosts)
+[0m06:24:51.052690 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.silver_hosts
+[0m06:24:51.052690 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:24:51.059589 [debug] [Thread-2 (]: Began executing node model.aws_dbt_snowflake_project.silver_hosts
+[0m06:24:51.070091 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:24:51.070091 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: create or replace  temporary view AIRBNB.silver.silver_hosts__dbt_tmp
+  
+  
+  
+  
+  as (
+    
+
+SELECT 
+    HOST_ID,
+    REPLACE(HOST_NAME, ' ', '_') AS HOST_NAME,
+    HOST_SINCE AS HOST_SINCE,
+    IS_SUPERHOST AS IS_SUPERHOST,
+    RESPONSE_RATE AS RESPONSE_RATE,
+    CASE 
+    WHEN RESPONSE_RATE > 95 THEN 'VERY GOOD'
+    WHEN RESPONSE_RATE > 80 THEN 'GOOD'
+    WHEN RESPONSE_RATE > 60 THEN 'FAIR'
+    ELSE 'POOR'
+    END AS RESPONSE_RATE_QUALITY,
+    CREATED_AT AS CREATED_AT
+FROM 
+    AIRBNB.bronze.bronze_hosts
+  )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */;
+[0m06:24:51.751066 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.687 seconds
+[0m06:24:51.766213 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:24:51.766213 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: describe table AIRBNB.silver.silver_hosts__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */
+[0m06:24:52.113924 [debug] [Thread-2 (]: SQL status: SUCCESS 7 in 0.340 seconds
+[0m06:24:52.113924 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:24:52.113924 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: describe table AIRBNB.silver.silver_hosts
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */
+[0m06:24:52.440727 [debug] [Thread-2 (]: SQL status: SUCCESS 7 in 0.327 seconds
+[0m06:24:52.455879 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:24:52.455879 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: describe table "AIRBNB"."SILVER"."SILVER_HOSTS"
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */
+[0m06:24:52.786473 [debug] [Thread-2 (]: SQL status: SUCCESS 7 in 0.329 seconds
+[0m06:24:52.833288 [debug] [Thread-2 (]: Writing runtime sql for node "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:24:52.833288 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:24:52.833288 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */;
+[0m06:24:53.210696 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.365 seconds
+[0m06:24:53.210732 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:24:53.210732 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: merge into AIRBNB.silver.silver_hosts as DBT_INTERNAL_DEST
+        using AIRBNB.silver.silver_hosts__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.HOST_ID = DBT_INTERNAL_DEST.HOST_ID))
+
+    
+    when matched then update set
+        "HOST_ID" = DBT_INTERNAL_SOURCE."HOST_ID","HOST_NAME" = DBT_INTERNAL_SOURCE."HOST_NAME","HOST_SINCE" = DBT_INTERNAL_SOURCE."HOST_SINCE","IS_SUPERHOST" = DBT_INTERNAL_SOURCE."IS_SUPERHOST","RESPONSE_RATE" = DBT_INTERNAL_SOURCE."RESPONSE_RATE","RESPONSE_RATE_QUALITY" = DBT_INTERNAL_SOURCE."RESPONSE_RATE_QUALITY","CREATED_AT" = DBT_INTERNAL_SOURCE."CREATED_AT"
+    
+
+    when not matched then insert
+        ("HOST_ID", "HOST_NAME", "HOST_SINCE", "IS_SUPERHOST", "RESPONSE_RATE", "RESPONSE_RATE_QUALITY", "CREATED_AT")
+    values
+        ("HOST_ID", "HOST_NAME", "HOST_SINCE", "IS_SUPERHOST", "RESPONSE_RATE", "RESPONSE_RATE_QUALITY", "CREATED_AT")
+
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */;
+[0m06:24:54.040347 [debug] [Thread-2 (]: SQL status: SUCCESS 200 in 0.837 seconds
+[0m06:24:54.040347 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:24:54.040347 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */
+[0m06:24:54.846002 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.804 seconds
+[0m06:24:54.867785 [debug] [Thread-2 (]: Applying DROP to: AIRBNB.silver.silver_hosts__dbt_tmp
+[0m06:24:54.869789 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_hosts"
+[0m06:24:54.870785 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_hosts: drop view if exists AIRBNB.silver.silver_hosts__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_hosts"} */
+[0m06:24:55.294169 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.422 seconds
+[0m06:24:55.297163 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3fce1b5d-fd53-4bab-a021-e4f35d1aaaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F3273890>]}
+[0m06:24:55.298163 [info ] [Thread-2 (]: 7 of 8 OK created sql incremental model silver.silver_hosts .................... [[32mSUCCESS 200[0m in 4.25s]
+[0m06:24:55.300166 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.silver_hosts
+[0m06:24:55.300166 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.silver_listings
+[0m06:24:55.301161 [info ] [Thread-2 (]: 8 of 8 START sql incremental model silver.silver_listings ...................... [RUN]
+[0m06:24:55.303126 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.silver_hosts, now model.aws_dbt_snowflake_project.silver_listings)
+[0m06:24:55.303126 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.silver_listings
+[0m06:24:55.312448 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:24:55.313487 [debug] [Thread-2 (]: Began executing node model.aws_dbt_snowflake_project.silver_listings
+[0m06:24:55.313487 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:24:55.313487 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: create or replace  temporary view AIRBNB.silver.silver_listings__dbt_tmp
+  
+  
+  
+  
+  as (
+    
+
+SELECT 
+    LISTING_ID,
+    HOST_ID,
+    PROPERTY_TYPE,
+    ROOM_TYPE,
+    CITY,
+    COUNTRY,
+    ACCOMMODATES,
+    BEDROOMS,
+    BATHROOMS,
+    PRICE_PER_NIGHT,
+    
+    CASE 
+        WHEN CAST(PRICE_PER_NIGHT AS INT) < 100 THEN 'low'
+        WHEN CAST(PRICE_PER_NIGHT AS INT) < 200 THEN 'medium'
+        ELSE 'high'
+    END
+ AS PRICE_PER_NIGHT_TAG,
+    CREATED_AT
+FROM 
+    AIRBNB.bronze.bronze_listings
+  )
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */;
+[0m06:24:55.890853 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.567 seconds
+[0m06:24:55.890853 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:24:55.890853 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: describe table AIRBNB.silver.silver_listings__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */
+[0m06:24:56.219341 [debug] [Thread-2 (]: SQL status: SUCCESS 12 in 0.328 seconds
+[0m06:24:56.219341 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:24:56.219341 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: describe table AIRBNB.silver.silver_listings
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */
+[0m06:24:56.565297 [debug] [Thread-2 (]: SQL status: SUCCESS 12 in 0.338 seconds
+[0m06:24:56.565297 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:24:56.565297 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: describe table "AIRBNB"."SILVER"."SILVER_LISTINGS"
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */
+[0m06:24:56.882060 [debug] [Thread-2 (]: SQL status: SUCCESS 12 in 0.308 seconds
+[0m06:24:56.905006 [debug] [Thread-2 (]: Writing runtime sql for node "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:24:56.909003 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:24:56.909938 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */;
+[0m06:24:57.269701 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.363 seconds
+[0m06:24:57.269701 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:24:57.269701 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: merge into AIRBNB.silver.silver_listings as DBT_INTERNAL_DEST
+        using AIRBNB.silver.silver_listings__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.LISTING_ID = DBT_INTERNAL_DEST.LISTING_ID))
+
+    
+    when matched then update set
+        "LISTING_ID" = DBT_INTERNAL_SOURCE."LISTING_ID","HOST_ID" = DBT_INTERNAL_SOURCE."HOST_ID","PROPERTY_TYPE" = DBT_INTERNAL_SOURCE."PROPERTY_TYPE","ROOM_TYPE" = DBT_INTERNAL_SOURCE."ROOM_TYPE","CITY" = DBT_INTERNAL_SOURCE."CITY","COUNTRY" = DBT_INTERNAL_SOURCE."COUNTRY","ACCOMMODATES" = DBT_INTERNAL_SOURCE."ACCOMMODATES","BEDROOMS" = DBT_INTERNAL_SOURCE."BEDROOMS","BATHROOMS" = DBT_INTERNAL_SOURCE."BATHROOMS","PRICE_PER_NIGHT" = DBT_INTERNAL_SOURCE."PRICE_PER_NIGHT","PRICE_PER_NIGHT_TAG" = DBT_INTERNAL_SOURCE."PRICE_PER_NIGHT_TAG","CREATED_AT" = DBT_INTERNAL_SOURCE."CREATED_AT"
+    
+
+    when not matched then insert
+        ("LISTING_ID", "HOST_ID", "PROPERTY_TYPE", "ROOM_TYPE", "CITY", "COUNTRY", "ACCOMMODATES", "BEDROOMS", "BATHROOMS", "PRICE_PER_NIGHT", "PRICE_PER_NIGHT_TAG", "CREATED_AT")
+    values
+        ("LISTING_ID", "HOST_ID", "PROPERTY_TYPE", "ROOM_TYPE", "CITY", "COUNTRY", "ACCOMMODATES", "BEDROOMS", "BATHROOMS", "PRICE_PER_NIGHT", "PRICE_PER_NIGHT_TAG", "CREATED_AT")
+
+
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */;
+[0m06:24:58.196208 [debug] [Thread-2 (]: SQL status: SUCCESS 500 in 0.921 seconds
+[0m06:24:58.196208 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:24:58.196208 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: COMMIT
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */
+[0m06:24:58.838471 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.632 seconds
+[0m06:24:58.854049 [debug] [Thread-2 (]: Applying DROP to: AIRBNB.silver.silver_listings__dbt_tmp
+[0m06:24:58.854049 [debug] [Thread-2 (]: Using snowflake connection "model.aws_dbt_snowflake_project.silver_listings"
+[0m06:24:58.854049 [debug] [Thread-2 (]: On model.aws_dbt_snowflake_project.silver_listings: drop view if exists AIRBNB.silver.silver_listings__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "aws_dbt_snowflake_project", "target_name": "dev", "node_id": "model.aws_dbt_snowflake_project.silver_listings"} */
+[0m06:24:59.214853 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.359 seconds
+[0m06:24:59.214853 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3fce1b5d-fd53-4bab-a021-e4f35d1aaaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F3350320>]}
+[0m06:24:59.214853 [info ] [Thread-2 (]: 8 of 8 OK created sql incremental model silver.silver_listings ................. [[32mSUCCESS 500[0m in 3.91s]
+[0m06:24:59.214853 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.silver_listings
+[0m06:24:59.214853 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.bookings
+[0m06:24:59.214853 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.silver_listings, now model.aws_dbt_snowflake_project.bookings)
+[0m06:24:59.214853 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.bookings
+[0m06:24:59.229955 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.bookings"
+[0m06:24:59.229955 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.bookings
+[0m06:24:59.229955 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.hosts
+[0m06:24:59.229955 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.bookings, now model.aws_dbt_snowflake_project.hosts)
+[0m06:24:59.229955 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.hosts
+[0m06:24:59.229955 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.hosts"
+[0m06:24:59.229955 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.hosts
+[0m06:24:59.245582 [debug] [Thread-2 (]: Began running node model.aws_dbt_snowflake_project.listings
+[0m06:24:59.249049 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aws_dbt_snowflake_project.hosts, now model.aws_dbt_snowflake_project.listings)
+[0m06:24:59.250392 [debug] [Thread-2 (]: Began compiling node model.aws_dbt_snowflake_project.listings
+[0m06:24:59.253144 [debug] [Thread-2 (]: Writing injected SQL for node "model.aws_dbt_snowflake_project.listings"
+[0m06:24:59.253144 [debug] [Thread-2 (]: Finished running node model.aws_dbt_snowflake_project.listings
+[0m06:24:59.261997 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:24:59.261997 [debug] [MainThread]: Connection 'list_AIRBNB' was left open.
+[0m06:24:59.261997 [debug] [MainThread]: On list_AIRBNB: Close
+[0m06:24:59.935380 [debug] [MainThread]: Connection 'list_AIRBNB_gold' was left open.
+[0m06:24:59.951000 [debug] [MainThread]: On list_AIRBNB_gold: Close
+[0m06:25:00.616650 [debug] [MainThread]: Connection 'model.aws_dbt_snowflake_project.listings' was left open.
+[0m06:25:00.617580 [debug] [MainThread]: On model.aws_dbt_snowflake_project.listings: Close
+[0m06:25:01.223006 [info ] [MainThread]: 
+[0m06:25:01.223006 [info ] [MainThread]: Finished running 6 incremental models, 2 table models in 0 hours 0 minutes and 34.27 seconds (34.27s).
+[0m06:25:01.223006 [debug] [MainThread]: Command end result
+[0m06:25:01.298353 [debug] [MainThread]: Wrote artifact WritableManifest to E:\aws_dbt_snowflake\aws_dbt_snowflake_project\target\manifest.json
+[0m06:25:01.302354 [debug] [MainThread]: Wrote artifact SemanticManifest to E:\aws_dbt_snowflake\aws_dbt_snowflake_project\target\semantic_manifest.json
+[0m06:25:01.314251 [debug] [MainThread]: Wrote artifact RunExecutionResult to E:\aws_dbt_snowflake\aws_dbt_snowflake_project\target\run_results.json
+[0m06:25:01.315255 [info ] [MainThread]: 
+[0m06:25:01.316249 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m06:25:01.317252 [info ] [MainThread]: 
+[0m06:25:01.318251 [error] [MainThread]: [31mFailure in model silver_bookings (models\silver\silver_bookings.sql)[0m
+[0m06:25:01.319264 [error] [MainThread]:   Compilation Error in model silver_bookings (models\silver\silver_bookings.sql)
+  'multiply' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m06:25:01.321910 [info ] [MainThread]: 
+[0m06:25:01.323009 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=8
+[0m06:25:01.327731 [debug] [MainThread]: Command `dbt run` failed at 06:25:01.327302 after 37.43 seconds
+[0m06:25:01.330532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205EFFEC170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F0238B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205F0238BC0>]}
+[0m06:25:01.331573 [debug] [MainThread]: Flushing usage events
+[0m06:25:03.165056 [debug] [MainThread]: An error was encountered while trying to flush usage events
